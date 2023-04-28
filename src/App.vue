@@ -22,6 +22,23 @@
   watch(weights, newWeights => {
     const ws = [...newWeights]
 
+    if (weightChart.value) {
+
+      weightChart.value.data.labels = ws
+        .sort((a, b) => a.date - b.date)
+        .map(weight => new Date(weight.date).toLocaleDateString() )
+        .slice(-7)
+
+      weightChart.value.data.datasets[0].data = ws
+        .sort((a, b) => a.date - b.date)
+        .map(weight => weight.weight)
+        .slice(-7)
+
+      weightChart.value.update()
+      
+      return
+	}
+
     nextTick(() => {
 		weightChart.value = new Chart(weightChartElement.value.getContext('2d'), {
 			type: 'line',
