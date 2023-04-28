@@ -1,7 +1,20 @@
-# Vue 3 + Vite
+### Weight
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+---
 
-## Recommended IDE Setup
+Este projeto é uma uma forma rápida de controlar seu peso diariamente, semanalmente, mensalmente, etc...
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## 🚀 Em desenvolvimento...
+
+## 📋 Tecnologias
+VueJS + Vite + LocalStorage + Chart JS 
+
+## ✒️ Autor
+Márcio Reis
+
+😊 Link de acesso: https://dev-marcioreis.github.io/weight-vue/
+
+---
+![image](https://user-images.githubusercontent.com/122680054/235194501-d71b171b-e7dc-4391-9824-90cf6bd439cc.png)
+
+
