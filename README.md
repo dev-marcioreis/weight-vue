@@ -4,7 +4,7 @@
 
 Este projeto é uma uma forma rápida de controlar seu peso diariamente, semanalmente, mensalmente, etc...
 
-## 🚀 Em desenvolvimento...
+## 🚀 Finalizado.
 
 ## 📋 Tecnologias
 VueJS + Vite + LocalStorage + Chart JS 
