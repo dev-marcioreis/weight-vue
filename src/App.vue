@@ -1,12 +1,12 @@
 <script setup>
 
   import { ref, shallowRef, computed, watch, nextTick } from 'vue'
-  import { Chart } from 'chart.js';
+  import { Chart } from 'chart.js/auto';
   
   const weights = ref([])
   const weightChartElement = ref(null)
   const weightChart = shallowRef(null)
-  const weightInput = ref(60.0)
+  const weightInput = ref(100)
 
   const currentWeight = computed(() => {
     return weights.value.sort((a, b) => b.date - a.date)[0] || { weight: 0 }
@@ -18,6 +18,33 @@
       date: new Date().getTime()
     })
   }
+
+  watch(weights, newWeights => {
+    const ws = [...newWeights]
+
+    nextTick(() => {
+		weightChart.value = new Chart(weightChartElement.value.getContext('2d'), {
+			type: 'line',
+			data: {
+				labels: ws.sort((a, b) => a.date - b.date).map(weight => new Date(weight.date).toLocaleDateString()),
+				datasets: [
+					{
+						label: 'Peso',
+						data: ws.sort((a, b) => a.date - b.date).map(weight => weight.weight),
+						backgroundColor: 'hsla(216, 84%, 58%, 0.75)',
+						borderColor: 'hsla(0, 0%, 0%, 0.548)',
+						borderWidth: 1,
+						fill: true
+					}
+				]
+			},
+			options: {
+				responsive: true,
+				maintainAspectRatio: false
+			}
+		})
+	})
+}, { deep: true })
 
 </script>
 
