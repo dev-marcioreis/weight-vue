@@ -2,12 +2,13 @@
 
 ---
 
-Este projeto é uma uma forma rápida de controlar seu peso diariamente, semanalmente, mensalmente, etc...
+Este projeto é uma forma rápida de controlar seu peso diariamente, semanalmente, mensalmente, etc...<br>
+Só terá versão para celular.
 
 ## 🚀 Finalizado.
 
 ## 📋 Tecnologias
-VueJS + Vite + LocalStorage + Chart JS 
+VueJS + Vite + Chart JS 
 
 ## ✒️ Autor
 Márcio Reis
