@@ -35,7 +35,7 @@
         .slice(-7)
 
       weightChart.value.update()
-      
+
       return
 	}
 
@@ -85,7 +85,7 @@
         <h2>Hitórico</h2>
         <ul>
           <li v-for="weight in weights">
-            <span>{{ weight.weight }}kg</span>
+            <span>{{ weight.weight }} kg</span>
             <small>{{ new Date(weight.date).toLocaleDateString() }}</small>
           </li>
         </ul>
