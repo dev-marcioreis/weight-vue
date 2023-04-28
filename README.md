@@ -2,7 +2,7 @@
 
 ---
 
-Este projeto é uma forma rápida de controlar seu peso diariamente, semanalmente, mensalmente, etc...<br>
+Este projeto é uma forma rápida de controlar seu peso diariamente.<br>
 Só terá versão para celular.
 
 ## 🚀 Finalizado.
