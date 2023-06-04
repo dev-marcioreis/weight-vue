@@ -3,8 +3,7 @@
 ---
 
 Controle seu peso diariamente.<br>
-Só terá versão para celular.<br>
-Aprendizado em Vue.
+Só terá versão para celular.
 
 ## 🚀 Finalizado.
 
